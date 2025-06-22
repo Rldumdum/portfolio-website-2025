@@ -1,11 +1,11 @@
 
 const Companies = () => {
   const companies = [
-    { name: "Six Eleven Global Services", logo: "/logo/six-eleven-center-logo.png" },
-    { name: "Davao City Water District", logo: "/logo/sunstar2024-026870f091-6b2e-4b5f.png" },
-    { name: "Aquila Softwares", logo: "/logo/logo.3e1d7bed.png" },
-    { name: "Adukasyon", logo: "/logo/LOGO.png" },
-    { name: "VXI Global Services", logo: "/logo/vxi-global-solutions-1200px-logo.png" },
+    { name: "Six Eleven Global Services", logo: "./logo/six-eleven-center-logo.png" },
+    { name: "Davao City Water District", logo: "./logo/sunstar2024-026870f091-6b2e-4b5f.png" },
+    { name: "Aquila Softwares", logo: "./logo/logo.3e1d7bed.png" },
+    { name: "Adukasyon", logo: "./logo/LOGO.png" },
+    { name: "VXI Global Services", logo: "./logo/vxi-global-solutions-1200px-logo.png" },
     
   ];
 

@@ -36,7 +36,7 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div>
               <img 
-                src="/image/IMG_1349.jpg"
+                src="./image/IMG_1349.jpg"
                 alt="Developer working"
                 className="rounded-2xl shadow-lg w-full h-96 object-cover"
               />
