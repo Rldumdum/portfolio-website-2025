@@ -44,7 +44,7 @@ const Hero = () => {
                 className="border-2 border-gray-900 text-gray-900 px-10 py-4 rounded-lg font-semibold hover:bg-gray-900 hover:text-white transition-all duration-300 hover:scale-105 flex items-center justify-center group"
               >
                 <Play size={16} className="mr-3" />
-                View Our Work
+                View Work
               </button>
             </div>
           </div>

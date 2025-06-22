@@ -50,11 +50,11 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-medium text-gray-800">Email</p>
-                    <p className="text-gray-600">alex@alexdev.com</p>
+                    <p className="text-gray-600">juelierldumdum@gmail.com</p>
                   </div>
                 </div>
                 
-                <div className="flex items-center">
+                {/* <div className="flex items-center">
                   <div className="bg-green-100 p-3 rounded-xl mr-4">
                     <Phone className="text-green-600" size={20} />
                   </div>
@@ -62,7 +62,7 @@ const Contact = () => {
                     <p className="font-medium text-gray-800">Phone</p>
                     <p className="text-gray-600">+1 (555) 123-4567</p>
                   </div>
-                </div>
+                </div> */}
                 
                 <div className="flex items-center">
                   <div className="bg-purple-100 p-3 rounded-xl mr-4">
@@ -70,7 +70,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-medium text-gray-800">Location</p>
-                    <p className="text-gray-600">San Francisco, CA</p>
+                    <p className="text-gray-600">Davao City, PH</p>
                   </div>
                 </div>
               </div>
@@ -80,7 +80,7 @@ const Contact = () => {
               <h4 className="text-lg font-semibold text-gray-800 mb-4">Follow Me</h4>
               <div className="flex space-x-4">
                 <a 
-                  href="https://github.com" 
+                  href="https://github.com/Rldumdum" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="bg-gray-100 p-3 rounded-xl hover:bg-gray-200 transition-colors"
@@ -88,7 +88,7 @@ const Contact = () => {
                   <Github className="text-gray-700" size={20} />
                 </a>
                 <a 
-                  href="https://linkedin.com" 
+                  href="https://www.linkedin.com/in/rldumdum/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="bg-blue-100 p-3 rounded-xl hover:bg-blue-200 transition-colors"

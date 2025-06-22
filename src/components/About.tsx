@@ -26,18 +26,17 @@ const About = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-800 mb-6">
-              Hi there! I'm Alex 👋
+              Hi there! I'm RL 👋
             </h2>
             <p className="text-xl text-gray-600 leading-relaxed">
-              A passionate freelance developer with 5+ years of experience crafting digital experiences 
-              that people love to use.
+              A passionate developer with 2+ years of experience in building software solutions that make a difference.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=500&h=600&fit=crop&crop=face"
+                src="/image/IMG_1349.jpg"
                 alt="Developer working"
                 className="rounded-2xl shadow-lg w-full h-96 object-cover"
               />
@@ -47,15 +46,13 @@ const About = () => {
               <p className="text-gray-600 leading-relaxed">
                 What started as curiosity about "how websites work" turned into a deep passion for creating 
                 digital solutions that make people's lives easier. I've had the privilege of working with 
-                startups, small businesses, and individual entrepreneurs to bring their visions to life.
+                startups, small businesses, and enterprises to improve operational efficiency.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                When I'm not coding, you'll find me exploring new technologies, contributing to open source 
-                projects, or enjoying a good cup of coffee while planning the next big project.
+                When I'm not coding, you'll find me exploring new technologies, planning and creating innovative solutions.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                I believe that great software isn't just about clean code—it's about understanding people, 
-                solving real problems, and creating experiences that feel effortless.
+                I believe that great software is solving real problems.
               </p>
             </div>
           </div>

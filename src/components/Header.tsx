@@ -18,7 +18,7 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="text-2xl font-bold text-gray-900">
-            Alex<span className="text-blue-600">Dev</span>
+            &lt;RL<span className="text-blue-600 ml-3">Dev/&gt;</span>
           </div>
           
           {/* Desktop Navigation */}
@@ -42,11 +42,11 @@ const Header = () => {
 
           {/* Social Links - Desktop */}
           <div className="hidden md:flex items-center space-x-4">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" 
+            <a href="https://github.com/Rldumdum" target="_blank" rel="noopener noreferrer" 
                className="text-gray-600 hover:text-blue-600 transition-colors">
               <Github size={20} />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.linkedin.com/in/rldumdum/" target="_blank" rel="noopener noreferrer"
                className="text-gray-600 hover:text-blue-600 transition-colors">
               <Linkedin size={20} />
             </a>

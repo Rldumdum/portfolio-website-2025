@@ -18,7 +18,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="col-span-2">
             <div className="text-2xl font-bold mb-4">
-              Alex<span className="text-blue-400">Dev</span>
+            &lt;RL<span className="text-blue-400 ml-3">Dev/&gt;</span>
             </div>
             <p className="text-gray-400 leading-relaxed mb-6 max-w-md">
               Passionate freelance developer creating beautiful, functional digital experiences 
@@ -79,9 +79,8 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Get in Touch</h4>
             <div className="space-y-2 text-gray-400">
-              <p>alex@alexdev.com</p>
-              <p>+1 (555) 123-4567</p>
-              <p>San Francisco, CA</p>
+              <p>juelierldumdum@gmail.com</p>
+              <p>Davao City, PH</p>
             </div>
           </div>
         </div>
@@ -89,10 +88,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © {currentYear} AlexDev. All rights reserved.
-            </p>
-            <p className="text-gray-400 text-sm flex items-center mt-4 md:mt-0">
-              Made with <Heart size={16} className="text-red-400 mx-1" /> and lots of coffee
+              © {currentYear} RL Dev. All rights reserved.
             </p>
           </div>
         </div>

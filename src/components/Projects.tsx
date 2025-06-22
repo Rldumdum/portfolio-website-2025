@@ -1,38 +1,55 @@
-
-import { ExternalLink, Github, ArrowRight } from 'lucide-react';
+import { ExternalLink, Github, ArrowRight } from "lucide-react";
 
 const Projects = () => {
   const projects = [
     {
-      title: "Enterprise Analytics Platform",
-      description: "A comprehensive business intelligence solution with real-time data processing, advanced reporting, and AI-powered insights for Fortune 500 companies.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
-      technologies: ["React", "TypeScript", "Python", "AWS", "PostgreSQL"],
+      title: "PIP Information System",
+      description:
+        "A system used by organizational stakeholders to find, view, and create plans, programs, and budgets through a web application.",
+      image:
+        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
+      technologies: ["React", "TypeScript", "C# .NET", "MSSQL"],
       liveUrl: "#",
       githubUrl: "#",
       featured: true,
-      category: "Enterprise"
+      category: "Enterprise",
     },
     {
-      title: "FinTech Mobile Application",
-      description: "Secure mobile banking application with biometric authentication, real-time transactions, and advanced financial planning tools.",
-      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop",
+      title: "Inventory System",
+      description:
+        "Secure mobile banking application with biometric authentication, real-time transactions, and advanced financial planning tools.",
+      image:
+        "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop",
       technologies: ["React Native", "Node.js", "MongoDB", "Stripe API"],
       liveUrl: "#",
       githubUrl: "#",
       featured: true,
-      category: "Mobile"
+      category: "Enterprise",
     },
     {
-      title: "Healthcare Management System",
-      description: "HIPAA-compliant patient management platform with telemedicine capabilities, appointment scheduling, and electronic health records.",
-      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=600&h=400&fit=crop",
+      title: "Aquila Consulting System (Medical Software)",
+      description:
+        "HIPAA-compliant patient management platform with telemedicine capabilities, appointment scheduling, and electronic health records.",
+      image:
+        "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=600&h=400&fit=crop",
       technologies: ["Vue.js", "Express.js", "PostgreSQL", "WebRTC"],
       liveUrl: "#",
       githubUrl: "#",
       featured: true,
-      category: "Healthcare"
-    }
+      category: "Healthcare",
+    },
+    {
+      title: "Partsman Mobile Application",
+      description:
+        "HIPAA-compliant patient management platform with telemedicine capabilities, appointment scheduling, and electronic health records.",
+      image:
+        "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=600&h=400&fit=crop",
+      technologies: ["Vue.js", "Express.js", "PostgreSQL", "WebRTC"],
+      liveUrl: "#",
+      githubUrl: "#",
+      featured: true,
+      category: "Healthcare",
+    },
   ];
 
   return (
@@ -46,19 +63,20 @@ const Projects = () => {
             Featured Projects
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Discover how we've helped organizations across various industries achieve 
-            their digital transformation goals through innovative solutions.
+            Discover how I've helped organizations across various industries
+            achieve their digital transformation goals through innovative
+            solutions.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-10">
           {projects.map((project, index) => (
-            <div 
+            <div
               key={index}
               className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-500 hover:-translate-y-2 group"
             >
               <div className="relative overflow-hidden">
-                <img 
+                <img
                   src={project.image}
                   alt={project.title}
                   className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
@@ -69,19 +87,19 @@ const Projects = () => {
                   </span>
                 </div>
               </div>
-              
+
               <div className="p-8">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
                   {project.title}
                 </h3>
-                
+
                 <p className="text-gray-600 mb-6 leading-relaxed">
                   {project.description}
                 </p>
-                
+
                 <div className="flex flex-wrap gap-2 mb-8">
                   {project.technologies.map((tech, techIndex) => (
-                    <span 
+                    <span
                       key={techIndex}
                       className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm font-medium"
                     >
@@ -89,17 +107,17 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
-                
+
                 <div className="flex items-center justify-between">
                   <div className="flex space-x-4">
-                    <a 
+                    <a
                       href={project.liveUrl}
                       className="flex items-center text-blue-600 hover:text-blue-700 font-semibold transition-colors group"
                     >
                       <ExternalLink size={16} className="mr-2" />
                       Live Demo
                     </a>
-                    <a 
+                    <a
                       href={project.githubUrl}
                       className="flex items-center text-gray-600 hover:text-gray-700 font-semibold transition-colors"
                     >
@@ -107,18 +125,21 @@ const Projects = () => {
                       Code
                     </a>
                   </div>
-                  <ArrowRight size={20} className="text-gray-400 group-hover:text-blue-600 group-hover:translate-x-1 transition-all duration-300" />
+                  <ArrowRight
+                    size={20}
+                    className="text-gray-400 group-hover:text-blue-600 group-hover:translate-x-1 transition-all duration-300"
+                  />
                 </div>
               </div>
             </div>
           ))}
         </div>
 
-        <div className="text-center mt-16">
+        {/* <div className="text-center mt-16">
           <button className="bg-gray-900 text-white px-10 py-4 rounded-lg font-semibold hover:bg-gray-800 transition-all duration-300 hover:scale-105 shadow-lg">
             View All Projects
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
   );
