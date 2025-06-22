@@ -8,7 +8,7 @@ const Projects = () => {
         "A system used by organizational stakeholders to find, view, and create plans, programs, and budgets through a web application.",
       image:
         "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
-      technologies: ["React", "TypeScript", "C# .NET", "MSSQL"],
+      technologies: ["React", "TypeScript", "C# .NET", "MSSQL", "Material UI"],
       liveUrl: "#",
       githubUrl: "#",
       featured: true,
@@ -17,10 +17,9 @@ const Projects = () => {
     {
       title: "Inventory System",
       description:
-        "Secure mobile banking application with biometric authentication, real-time transactions, and advanced financial planning tools.",
-      image:
-        "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop",
-      technologies: ["React Native", "Node.js", "MongoDB", "Stripe API"],
+        "Inventory system allows us to track items and deploy and return products/items, manage warehouse stocks.",
+      image: "./image/inventory.png",
+      technologies: ["Next.js", "AWS RDS", "Prisma", "Ant Design"],
       liveUrl: "#",
       githubUrl: "#",
       featured: true,
@@ -29,10 +28,9 @@ const Projects = () => {
     {
       title: "Aquila Consulting System (Medical Software)",
       description:
-        "HIPAA-compliant patient management platform with telemedicine capabilities, appointment scheduling, and electronic health records.",
-      image:
-        "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=600&h=400&fit=crop",
-      technologies: ["Vue.js", "Express.js", "PostgreSQL", "WebRTC"],
+        "Allows us to check schedules, print reports and receipts, and manage medicine stock inventory.",
+      image: "./image/medicalsoftware.png",
+      technologies: ["Next.js", "C# .NET", "Tailwind Css"],
       liveUrl: "#",
       githubUrl: "#",
       featured: true,
@@ -41,17 +39,15 @@ const Projects = () => {
     {
       title: "Partsman Mobile Application",
       description:
-        "HIPAA-compliant patient management platform with telemedicine capabilities, appointment scheduling, and electronic health records.",
-      image:
-        "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=600&h=400&fit=crop",
-      technologies: ["Vue.js", "Express.js", "PostgreSQL", "WebRTC"],
+        "Mobile app for ordering car-related products such as tires and auto parts directly from suppliers.",
+      image: "./image/partsman.png",
+      technologies: ["React Native", "Expo", "PostgreSQL"],
       liveUrl: "#",
       githubUrl: "#",
       featured: true,
-      category: "Healthcare",
+      category: "Automotive",
     },
   ];
-
   return (
     <section id="projects" className="py-24 bg-white">
       <div className="container mx-auto px-6">
@@ -108,7 +104,7 @@ const Projects = () => {
                   ))}
                 </div>
 
-                <div className="flex items-center justify-between">
+                {/* <div className="flex items-center justify-between">
                   <div className="flex space-x-4">
                     <a
                       href={project.liveUrl}
@@ -129,7 +125,7 @@ const Projects = () => {
                     size={20}
                     className="text-gray-400 group-hover:text-blue-600 group-hover:translate-x-1 transition-all duration-300"
                   />
-                </div>
+                </div> */}
               </div>
             </div>
           ))}
