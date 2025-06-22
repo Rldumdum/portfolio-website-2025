@@ -1,122 +1,121 @@
 
-import { ExternalLink, Github } from 'lucide-react';
+import { ExternalLink, Github, ArrowRight } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A modern, full-stack e-commerce solution with real-time inventory management, secure payments, and admin dashboard.",
-      image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=600&h=400&fit=crop",
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe"],
+      title: "Enterprise Analytics Platform",
+      description: "A comprehensive business intelligence solution with real-time data processing, advanced reporting, and AI-powered insights for Fortune 500 companies.",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
+      technologies: ["React", "TypeScript", "Python", "AWS", "PostgreSQL"],
       liveUrl: "#",
       githubUrl: "#",
-      featured: true
+      featured: true,
+      category: "Enterprise"
     },
     {
-      title: "Task Management App",
-      description: "Collaborative project management tool with real-time updates, team chat, and advanced reporting features.",
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&h=400&fit=crop",
-      technologies: ["Vue.js", "Firebase", "Tailwind CSS", "PWA"],
+      title: "FinTech Mobile Application",
+      description: "Secure mobile banking application with biometric authentication, real-time transactions, and advanced financial planning tools.",
+      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop",
+      technologies: ["React Native", "Node.js", "MongoDB", "Stripe API"],
       liveUrl: "#",
       githubUrl: "#",
-      featured: true
+      featured: true,
+      category: "Mobile"
     },
     {
-      title: "Restaurant Ordering System",
-      description: "Mobile-first ordering platform with QR code menus, payment integration, and kitchen management system.",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop",
-      technologies: ["React Native", "Express.js", "MongoDB", "Square API"],
+      title: "Healthcare Management System",
+      description: "HIPAA-compliant patient management platform with telemedicine capabilities, appointment scheduling, and electronic health records.",
+      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=600&h=400&fit=crop",
+      technologies: ["Vue.js", "Express.js", "PostgreSQL", "WebRTC"],
       liveUrl: "#",
       githubUrl: "#",
-      featured: true
-    },
-    {
-      title: "Analytics Dashboard",
-      description: "Real-time business intelligence dashboard with interactive charts and automated reporting capabilities.",
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop",
-      technologies: ["React", "D3.js", "Python", "AWS"],
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: false
+      featured: true,
+      category: "Healthcare"
     }
   ];
 
-  const featuredProjects = projects.filter(project => project.featured);
-
   return (
-    <section id="projects" className="py-20 bg-gray-50">
+    <section id="projects" className="py-24 bg-white">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-800 mb-6">
+        <div className="text-center mb-20">
+          <div className="inline-flex items-center bg-blue-50 text-blue-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
+            <span>Our Work</span>
+          </div>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Featured Projects
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Here are some of my recent projects that showcase my skills and passion for creating 
-            meaningful digital experiences.
+            Discover how we've helped organizations across various industries achieve 
+            their digital transformation goals through innovative solutions.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8 mb-12">
-          {featuredProjects.map((project, index) => (
+        <div className="grid lg:grid-cols-3 gap-10">
+          {projects.map((project, index) => (
             <div 
               key={index}
-              className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group"
+              className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-500 hover:-translate-y-2 group"
             >
               <div className="relative overflow-hidden">
                 <img 
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+                <div className="absolute top-4 left-4">
+                  <span className="bg-white/90 backdrop-blur-sm text-gray-800 px-3 py-1 rounded-full text-sm font-medium">
+                    {project.category}
+                  </span>
+                </div>
               </div>
               
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">
+              <div className="p-8">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">
                   {project.title}
                 </h3>
                 
-                <p className="text-gray-600 mb-4 leading-relaxed">
+                <p className="text-gray-600 mb-6 leading-relaxed">
                   {project.description}
                 </p>
                 
-                <div className="flex flex-wrap gap-2 mb-6">
+                <div className="flex flex-wrap gap-2 mb-8">
                   {project.technologies.map((tech, techIndex) => (
                     <span 
                       key={techIndex}
-                      className="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-sm"
+                      className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm font-medium"
                     >
                       {tech}
                     </span>
                   ))}
                 </div>
                 
-                <div className="flex space-x-4">
-                  <a 
-                    href={project.liveUrl}
-                    className="flex items-center text-blue-600 hover:text-blue-700 font-medium transition-colors"
-                  >
-                    <ExternalLink size={16} className="mr-2" />
-                    Live Demo
-                  </a>
-                  <a 
-                    href={project.githubUrl}
-                    className="flex items-center text-gray-600 hover:text-gray-700 font-medium transition-colors"
-                  >
-                    <Github size={16} className="mr-2" />
-                    Code
-                  </a>
+                <div className="flex items-center justify-between">
+                  <div className="flex space-x-4">
+                    <a 
+                      href={project.liveUrl}
+                      className="flex items-center text-blue-600 hover:text-blue-700 font-semibold transition-colors group"
+                    >
+                      <ExternalLink size={16} className="mr-2" />
+                      Live Demo
+                    </a>
+                    <a 
+                      href={project.githubUrl}
+                      className="flex items-center text-gray-600 hover:text-gray-700 font-semibold transition-colors"
+                    >
+                      <Github size={16} className="mr-2" />
+                      Code
+                    </a>
+                  </div>
+                  <ArrowRight size={20} className="text-gray-400 group-hover:text-blue-600 group-hover:translate-x-1 transition-all duration-300" />
                 </div>
               </div>
             </div>
           ))}
         </div>
 
-        <div className="text-center">
-          <p className="text-gray-600 mb-6">
-            Interested in seeing more of my work?
-          </p>
-          <button className="bg-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-700 transition-colors duration-300">
+        <div className="text-center mt-16">
+          <button className="bg-gray-900 text-white px-10 py-4 rounded-lg font-semibold hover:bg-gray-800 transition-all duration-300 hover:scale-105 shadow-lg">
             View All Projects
           </button>
         </div>
