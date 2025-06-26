@@ -8,10 +8,12 @@ import Projects from '@/components/Projects';
 import Testimonials from '@/components/Testimonials';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
+import AiWidget from '@/components/AiWidget';
 
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <AiWidget />
       <Header />
       <Hero />
       <Companies />
