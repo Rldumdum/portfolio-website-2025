@@ -28,7 +28,7 @@ const Hero = () => {
             
             <p className="text-xl text-gray-600 mb-10 leading-relaxed max-w-xl mx-auto lg:mx-0">
               I partner with forward-thinking companies to create exceptional web applications, 
-              mobile experiences, and digital solutions that drive business growth.
+              mobile experiences, AI powered-tools, and digital solutions that drive business growth.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start">

@@ -5,7 +5,8 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
-  const resumeUrl = "https://docs.google.com/document/d/1kG1A-3qp7rDQ9E5I9fW6E1k0kupuGRUx/edit";
+  const resumeUrl =
+    "https://docs.google.com/document/d/1kG1A-3qp7rDQ9E5I9fW6E1k0kupuGRUx/edit";
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -146,6 +147,12 @@ const Header = () => {
                   className="text-gray-700 hover:text-blue-600 transition-colors text-left font-medium"
                 >
                   Contact
+                </button>
+                <button
+                  onClick={() => setIsOpen(true)}
+                  className="bg-zinc-800 text-white px-6 py-2 rounded-lg font-semibold hover:bg-zinc-900 transition-colors"
+                >
+                  Resume
                 </button>
                 <div className="flex items-center space-x-4 pt-4 border-t border-gray-100">
                   <a
