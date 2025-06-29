@@ -47,6 +47,17 @@ const Projects = () => {
       featured: true,
       category: "Automotive",
     },
+    {
+      title: "RL - Official Blog Site",
+      description:
+        "Blog site showcasing my projects, articles, and insights on software development and technology.",
+      image: "./image/blogsite.png",
+      technologies: ["Next.js", "Tailwind CSS" ],
+      liveUrl: "https://rl-blog-app.vercel.app/",
+      githubUrl: "#",
+      featured: true,
+      category: "Technology",
+    },
   ];
   return (
     <section id="projects" className="py-24 bg-white">
@@ -103,20 +114,20 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
-
-                {/* <div className="flex items-center justify-between">
+                {project.liveUrl !== "#" && (
+                  <div className="flex items-center justify-between">
                   <div className="flex space-x-4">
                     <a
                       href={project.liveUrl}
                       className="flex items-center text-blue-600 hover:text-blue-700 font-semibold transition-colors group"
-                    >
+                      >
                       <ExternalLink size={16} className="mr-2" />
                       Live Demo
                     </a>
                     <a
                       href={project.githubUrl}
                       className="flex items-center text-gray-600 hover:text-gray-700 font-semibold transition-colors"
-                    >
+                      >
                       <Github size={16} className="mr-2" />
                       Code
                     </a>
@@ -124,8 +135,9 @@ const Projects = () => {
                   <ArrowRight
                     size={20}
                     className="text-gray-400 group-hover:text-blue-600 group-hover:translate-x-1 transition-all duration-300"
-                  />
-                </div> */}
+                    />
+                </div>
+                  )}
               </div>
             </div>
           ))}
