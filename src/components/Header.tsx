@@ -6,7 +6,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const resumeUrl =
-    "https://docs.google.com/document/d/1kG1A-3qp7rDQ9E5I9fW6E1k0kupuGRUx/edit";
+    "https://docs.google.com/document/d/1bmzT_MbhAfsDZKCJI9EqTxoxNrqT7U2F/edit";
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
