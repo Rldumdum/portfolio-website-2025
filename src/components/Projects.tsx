@@ -37,6 +37,17 @@ const Projects = () => {
       category: "Healthcare",
     },
     {
+      title: "Student Information System",
+      description:
+        "Vibe-Coded Student information system for schools",
+      image: "./image/student-information-system.png",
+      technologies: ["Next.Js", "Supabase", "Lovable"],
+      liveUrl: "https://studentinformation-system.lovable.app/",
+      githubUrl: "#",
+      featured: true,
+      category: "Education",
+    },
+    {
       title: "Partsman Mobile Application",
       description:
         "Mobile app for ordering car-related products such as tires and auto parts directly from suppliers.",
@@ -59,7 +70,8 @@ const Projects = () => {
       category: "Technology",
     },
     {
-      title: "DRAW MY RUN - Sketch your perfect run, export it as a run file, and sync it with Strava",
+      title:
+        "DRAW MY RUN - Sketch your perfect run, export it as a run file, and sync it with Strava",
       description:
         "Sketch your perfect run, export it as a run file, and sync it with Strava",
       image: "./image/drawmyrun.png",
