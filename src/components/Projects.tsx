@@ -3,6 +3,18 @@ import { ExternalLink, Github, ArrowRight } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
+      title: "Freelancers Course Hub",
+      description:
+        "An ecommerce site for freelancers to buy courses and learn new skills to grow their careers.",
+      image:
+        "./image/freelancers-course-site.png",
+      technologies: ["Nextjs", "TypeScript", "Prisma", "PostgreSQL", "Tailwind CSS"],
+      liveUrl: "https://freelancers-course-site.vercel.app/",
+      githubUrl: "#",
+      featured: true,
+      category: "Ecommerce",
+    },
+    {
       title: "PIP Information System",
       description:
         "A system used by organizational stakeholders to find, view, and create plans, programs, and budgets through a web application.",
@@ -38,8 +50,7 @@ const Projects = () => {
     },
     {
       title: "Student Information System",
-      description:
-        "Vibe-Coded Student information system for schools",
+      description: "Vibe-Coded Student information system for schools",
       image: "./image/student-information-system.png",
       technologies: ["Next.Js", "Supabase", "Lovable"],
       liveUrl: "https://studentinformation-system.lovable.app/",
