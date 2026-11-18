@@ -3,6 +3,17 @@ import { ExternalLink, Github, ArrowRight } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
+      title: "Davao Coin - Barangay Durian",
+      description:
+        "A 3D browser game on the blockchain: mine the mountain for DURIAN, trade with merchants, and eat fruit to keep going. Every swing, trade and bite is a real transaction on Base Sepolia (testnet).",
+      image: "./image/davao-coin.png",
+      technologies: ["React", "Three.js", "Solidity", "Foundry", "Base Sepolia", "Supabase", "Vercel"],
+      liveUrl: "https://davao-coin.vercel.app",
+      githubUrl: "https://github.com/Rldumdum/davao-coin",
+      featured: true,
+      category: "Web3 / Gaming",
+    },
+    {
       title: "Freelancers Course Hub",
       description:
         "An ecommerce site for freelancers to buy courses and learn new skills to grow their careers.",
